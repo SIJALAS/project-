@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<title>Sijalas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color:rgb(100,100,255);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 7px 8px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+li a.login {
+    color: white;
+    background-color:rgb(50,100,255);
+}
+</style>
+<style style="text/css">
+.example1 {
+ height: 50px; 
+ overflow: hidden;
+ position: relative;
+}
+.example1 h3 {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%); 
+ transform:translateX(100%);
+ /* Apply animation to this element */ 
+ -moz-animation: example1 15s linear infinite;
+ -webkit-animation: example1 15s linear infinite;
+ animation: example1 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%);   
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<header><h1><b>Si Jalas</b></h1>
+</header>
+
+<ul>
+  <li style="float:right"><a class="login" href="#Login">Login</a></li>
+</ul>
+<br>
+<!-- First Grid tc 101-104-->
+  <div class="w3-row-padding ">
+    <div class="w3-quarter w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>101</b></p>
+        <p>Tampilkan Info Jadwal Ruang 101 ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-quarter w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>102</b></p>
+        <p>Tampilkan Info Jadwal Ruang 102 ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-quarter w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>103</b></p>
+        <p>Tampilkan Info Jadwal Ruang 103 ambil dari database</p>
+      </div>
+    </div>
+ <div class="w3-quarter w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>104</b></p>
+        <p>Tampilkan Info Jadwal Ruang 104 ambil dari database</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Grid tc105-108-->
+  <div class="w3-row-padding">
+    <div class="w3-quarter w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>105</b></p>
+        <p> Tampilkan Info Jadwal Ruang 105 ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-quarter w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>106</b></p>
+        <p>Tampilkan Info Jadwal Ruang 106 ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-quarter w3-container">
+      <div class="w3-container w3-white">
+        <p><b>107</b></p>
+        <p>Tampilkan Info Jadwal Ruang 107 ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-quarter w3-container">
+      <div class="w3-container w3-white">
+        <p><b>108</b></p>
+        <p>Tampilkan Info Jadwal Ruang 108 ambil dari database</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- third Grid aula,lpsi-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>Aula</b></p>
+        <p> Tampilkan Info Jadwal Ruang Aula ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>Lpsi 1</b></p>
+        <p>Tampilkan Info Jadwal Ruang LPSI 1 ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <div class="w3-container w3-white">
+        <p><b>LPSI 2</b></p>
+        <p>Tampilkan Info Jadwal Ruang LPSI 2 ambil dari database</p>
+      </div>
+    </div>
+
+  
+<!-- End page content -->
+</div>
+
+<footer class="example1">
+<h3>Running text informasi penting </h3>
+</footer>
+
+
+</body>
+</html>
