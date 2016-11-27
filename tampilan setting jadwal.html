@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Sijalas</title>
+<title>Sistem Jadwal Kelas</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -36,7 +36,7 @@ li a.active {
     color: white;
     background-color: #4CAF50;
 }
-li a.login {
+li a.logout {
     color: white;
     background-color:rgb(50,100,255);
 }
@@ -87,22 +87,30 @@ li a.login {
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <header>
-   <h1><b>Si Jalas</b></h1>
+   <h1><b>Informasi Jadwal Kelas</b></h1>
 </header>
 
 <ul>
   <li><a  href="#Preview">Preview</a></li>
   <li><a class ="active" href="#Setting Jadwal">Setting Jadwal</a></li>
   <li><a href="#Setting Running Teks">Setting Running Teks</a></li>
-  <li style="float:right"><a class="login" href="#Login">Login</a></li>
+  <li style="float:right"><a class="logout" href="#Logout">Logout</a></li>
 </ul>
+<br>
+      <span class="w3-margin-right">Hari:</span>
+      <button class="w3-btn w3-white">Senin</button>
+      <button class="w3-btn w3-white">Selasa</button>
+      <button class="w3-btn w3-white">Rabu</button>
+      <button class="w3-btn w3-white">Kamis</button>
+      <button class="w3-btn w3-white">Jum'at</button>
+</br>
 <br>
 <!-- First Grid-->
   <div class="w3-row-padding ">
     <div class="w3-quarter w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <h3><b>101</b></h3>
-        <h6>Sesi :</h6>
+        <h6>Jam ke :</h6>
         <select>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -128,15 +136,15 @@ li a.login {
         <br/>
         <h6>Keterangan :</h6>
         <select style="font-size:9px">
-            <option value="Ada">Ada</option>
-            <option value="Tidak">Tidak Bisa Hadir</option>
+            <option value="Ada"  class="w3-green">Ada</option>
+            <option value="Tidak" class="w3-red">Tidak Bisa Hadir</option>
         </select>
       </div>
     </div>
     <div class="w3-quarter w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <h3><b>102</b></h3>
-        <h6>Sesi :</h6>
+        <h6>Jam ke :</h6>
         <select>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -162,15 +170,15 @@ li a.login {
         <br/>
         <h6>Keterangan :</h6>
         <select style="font-size:9px">
-            <option value="Ada">Ada</option>
-            <option value="Tidak">Tidak Bisa Hadir</option>
+            <option value="Ada"  class="w3-green">Ada</option>
+            <option value="Tidak" class="w3-red">Tidak Bisa Hadir</option>
         </select>
       </div>
     </div>
     <div class="w3-quarter w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <h3><b>103</b></h3>
-        <h6>Sesi :</h6>
+        <h6>Jam ke :</h6>
         <select>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -196,15 +204,15 @@ li a.login {
         <br/>
         <h6>Keterangan :</h6>
         <select style="font-size:9px">
-            <option value="Ada">Ada</option>
-            <option value="Tidak">Tidak Bisa Hadir</option>
+            <option value="Ada"  class="w3-green">Ada</option>
+            <option value="Tidak" class="w3-red">Tidak Bisa Hadir</option>
         </select>
       </div>
     </div>
  <div class="w3-quarter w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <h3><b>104</b></h3>
-        <h6>Sesi :</h6>
+        <h6>Jam ke :</h6>
         <select>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -230,8 +238,8 @@ li a.login {
         <br/>
         <h6>Keterangan :</h6>
         <select style="font-size:9px">
-            <option value="Ada">Ada</option>
-            <option value="Tidak">Tidak Bisa Hadir</option>
+            <option value="Ada"  class="w3-green">Ada</option>
+            <option value="Tidak" class="w3-red">Tidak Bisa Hadir</option>
         </select>
       </div>
     </div>
@@ -242,7 +250,7 @@ li a.login {
     <div class="w3-quarter w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <h3><b>105</b></h3>
-        <h6>Sesi :</h6>
+        <h6>Jam ke :</h6>
         <select>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -268,15 +276,15 @@ li a.login {
         <br/>
         <h6>Keterangan :</h6>
         <select style="font-size:9px">
-            <option value="Ada">Ada</option>
-            <option value="Tidak">Tidak Bisa Hadir</option>
+            <option value="Ada"  class="w3-green">Ada</option>
+            <option value="Tidak" class="w3-red">Tidak Bisa Hadir</option>
         </select>
       </div>
     </div>
     <div class="w3-quarter w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <h3><b>106</b></h3>
-        <h6>Sesi :</h6>
+        <h6>Jam ke :</h6>
         <select>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -302,15 +310,15 @@ li a.login {
         <br/>
         <h6>Keterangan :</h6>
         <select style="font-size:9px">
-            <option value="Ada">Ada</option>
-            <option value="Tidak">Tidak Bisa Hadir</option>
+            <option value="Ada"  class="w3-green">Ada</option>
+            <option value="Tidak" class="w3-red">Tidak Bisa Hadir</option>
         </select>
       </div>
     </div>
     <div class="w3-quarter w3-container">
       <div class="w3-container w3-white">
         <h3><b>107</b></h3>
-        <h6>Sesi :</h6>
+        <h6>Jam ke :</h6>
         <select>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -336,15 +344,15 @@ li a.login {
         <br/>
         <h6>Keterangan :</h6>
         <select style="font-size:9px">
-            <option value="Ada">Ada</option>
-            <option value="Tidak">Tidak Bisa Hadir</option>
+            <option value="Ada"  class="w3-green">Ada</option>
+            <option value="Tidak" class="w3-red">Tidak Bisa Hadir</option>
         </select>
       </div>
     </div>
     <div class="w3-quarter w3-container">
       <div class="w3-container w3-white">
         <h3><b>108</b></h3>
-        <h6>Sesi :</h6>
+        <h6>Jam ke :</h6>
         <select>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -370,8 +378,8 @@ li a.login {
         <br/>
         <h6>Keterangan :</h6>
         <select style="font-size:9px">
-            <option value="Ada">Ada</option>
-            <option value="Tidak">Tidak Bisa Hadir</option>
+            <option value="Ada"  class="w3-green">Ada</option>
+            <option value="Tidak" class="w3-red">Tidak Bisa Hadir</option>
         </select>
       </div>
     </div>
@@ -382,7 +390,7 @@ li a.login {
     <div class="w3-third w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <h3><b>Aula</b></h3>
-        <h6>Sesi :</h6>
+        <h6>Jam ke :</h6>
         <select>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -408,15 +416,15 @@ li a.login {
         <br/>
         <h6>Keterangan :</h6>
         <select style="font-size:9px">
-            <option value="Ada">Ada</option>
-            <option value="Tidak">Tidak Bisa Hadir</option>
+            <option value="Ada"  class="w3-green">Ada</option>
+            <option value="Tidak" class="w3-red">Tidak Bisa Hadir</option>
         </select>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <h3><b>LPSI1</b></h3>
-        <h6>Sesi :</h6>
+        <h6>Jam ke :</h6>
         <select>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -442,15 +450,15 @@ li a.login {
         <br/>
         <h6>Keterangan :</h6>
         <select style="font-size:9px">
-            <option value="Ada">Ada</option>
-            <option value="Tidak">Tidak Bisa Hadir</option>
+            <option value="Ada"  class="w3-green">Ada</option>
+            <option value="Tidak" class="w3-red">Tidak Bisa Hadir</option>
         </select>
       </div>
     </div>
     <div class="w3-third w3-container">
       <div class="w3-container w3-white">
         <h3><b>LPSI2</b></h3>
-        <h6>Sesi :</h6>
+        <h6>Jam ke :</h6>
         <select>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -476,8 +484,8 @@ li a.login {
         <br/>
         <h6>Keterangan :</h6>
         <select style="font-size:9px">
-            <option value="Ada">Ada</option>
-            <option value="Tidak">Tidak Bisa Hadir</option>
+            <option value="Ada"  class="w3-green">Ada</option>
+            <option value="Tidak" class="w3-red">Tidak Bisa Hadir</option>
         </select>
       </div>
     </div>
@@ -485,10 +493,5 @@ li a.login {
   
 <!-- End page content -->
 </div>
-
-<!-- <footer class="example1">
-<h3>Running text informasi penting </h3>
-</footer> -->
-
 </body>
 </html>
