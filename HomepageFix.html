@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<title>Sijalas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<head>
+
+<style>
+
+/* Ini style awal untuk Login */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/* Ini style akhir untuk Login */
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color:rgb(100,100,255);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 7px 8px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+li a.login {
+    color: white;
+    background-color:rgb(50,100,255);
+}
+</style>
+<style style="text/css">
+.example1 {
+ height: 50px; 
+ overflow: hidden;
+ position: relative;
+}
+.example1 h3 {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%); 
+ transform:translateX(100%);
+ /* Apply animation to this element */ 
+ -moz-animation: example1 15s linear infinite;
+ -webkit-animation: example1 15s linear infinite;
+ animation: example1 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%);   
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<header>
+<h1><b><center>Sistem Informasi Jadwal Kelas</center></b></h1>
+</header>
+
+<ul>
+  <li onclick="document.getElementById('id01').style.display='block'"style="float:right"><a class="login" href="#Login">Login</a></li>
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</ul>
+<br>
+
+
+
+
+
+
+<!-- First Grid tc 101-104-->
+  <div class="w3-row-padding ">
+    <div class="w3-quarter w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>101</b></p>
+        <p>Tampilkan Info Jadwal Ruang 101 ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-quarter w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>102</b></p>
+        <p>Tampilkan Info Jadwal Ruang 102 ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-quarter w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>103</b></p>
+        <p>Tampilkan Info Jadwal Ruang 103 ambil dari database</p>
+      </div>
+    </div>
+ <div class="w3-quarter w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>104</b></p>
+        <p>Tampilkan Info Jadwal Ruang 104 ambil dari database</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Grid tc105-108-->
+  <div class="w3-row-padding">
+    <div class="w3-quarter w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>105</b></p>
+        <p> Tampilkan Info Jadwal Ruang 105 ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-quarter w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>106</b></p>
+        <p>Tampilkan Info Jadwal Ruang 106 ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-quarter w3-container">
+      <div class="w3-container w3-white">
+        <p><b>107</b></p>
+        <p>Tampilkan Info Jadwal Ruang 107 ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-quarter w3-container">
+      <div class="w3-container w3-white">
+        <p><b>108</b></p>
+        <p>Tampilkan Info Jadwal Ruang 108 ambil dari database</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- third Grid aula,lpsi-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>Aula</b></p>
+        <p> Tampilkan Info Jadwal Ruang Aula ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>Lpsi 1</b></p>
+        <p>Tampilkan Info Jadwal Ruang LPSI 1 ambil dari database</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <div class="w3-container w3-white">
+        <p><b>LPSI 2</b></p>
+        <p>Tampilkan Info Jadwal Ruang LPSI 2 ambil dari database</p>
+      </div>
+    </div>
+
+  
+<!-- End page content -->
+</div>
+
+<footer class="example1">
+<h3>Running text informasi penting </h3>
+</footer>
+
+
+</body>
+</html>
