@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Sijalas</title>
+<title>Sistem Jadwal Kelas</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -36,7 +36,7 @@ li a.active {
     color: white;
     background-color: #4CAF50;
 }
-li a.login {
+li a.logout {
     color: white;
     background-color:rgb(50,100,255);
 }
@@ -87,40 +87,64 @@ li a.login {
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <header>
-   <h1><b>Si Jalas</b></h1>
+   <h1><b>Informasi Jadwal Kelas</b></h1>
 </header>
 
 <ul>
   <li><a class="active" href="#Preview">Preview</a></li>
   <li><a href="#Setting Jadwal">Setting Jadwal</a></li>
   <li><a href="#Setting Running Teks">Setting Running Teks</a></li>
-  <li style="float:right"><a class="login" href="#Login">Login</a></li>
+  <li style="float:right"><a class="logout" href="#Logout">Logout</a></li>
 </ul>
 <br>
+      <span class="w3-margin-right">Hari :</span>
+      <button class="w3-btn w3-white">Senin</button>
+      <button class="w3-btn w3-white">Selasa</button>
+      <button class="w3-btn w3-white">Rabu</button>
+      <button class="w3-btn w3-white">Kamis</button>
+      <button class="w3-btn w3-white">Jum'at</button>
+</br>
+<br>
+      <span class="w3-margin-right">Jam ke:</span>
+         <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+<br></br>
 <!-- First Grid-->
   <div class="w3-row-padding ">
     <div class="w3-quarter w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <p><b>101</b></p>
-        <p>Tampilkan Info Jadwal Ruang 101 ambil dari database</p>
+        <p>Matakuliah :</p>
+        <p>Nama Dosen :</p>
+        <p>Keterangan : Ada/tidak</p>
       </div>
     </div>
     <div class="w3-quarter w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <p><b>102</b></p>
-        <p>Tampilkan Info Jadwal Ruang 102 ambil dari database</p>
+        <p>Matakuliah :</p>
+        <p>Nama Dosen :</p>
+        <p>Keterangan : Ada/tidak</p>
       </div>
     </div>
     <div class="w3-quarter w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <p><b>103</b></p>
-        <p>Tampilkan Info Jadwal Ruang 103 ambil dari database</p>
+        <p>Matakuliah :</p>
+        <p>Nama Dosen :</p>
+        <p>Keterangan : Ada/tidak</p>
       </div>
     </div>
  <div class="w3-quarter w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <p><b>104</b></p>
-        <p>Tampilkan Info Jadwal Ruang 104 ambil dari database</p>
+        <p>Matakuliah :</p>
+        <p>Nama Dosen :</p>
+        <p>Keterangan : Ada/tidak</p>
       </div>
     </div>
   </div>
@@ -130,25 +154,33 @@ li a.login {
     <div class="w3-quarter w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <p><b>105</b></p>
-        <p> Tampilkan Info Jadwal Ruang 105 ambil dari database</p>
+        <p>Matakuliah :</p>
+        <p>Nama Dosen :</p>
+        <p>Keterangan : Ada/tidak</p>
       </div>
     </div>
     <div class="w3-quarter w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <p><b>106</b></p>
-        <p>Tampilkan Info Jadwal Ruang 106 ambil dari database</p>
+        <p>Matakuliah :</p>
+        <p>Nama Dosen :</p>
+        <p>Keterangan : Ada/tidak</p>
       </div>
     </div>
     <div class="w3-quarter w3-container">
       <div class="w3-container w3-white">
         <p><b>107</b></p>
-        <p>Tampilkan Info Jadwal Ruang 107 ambil dari database</p>
+        <p>Matakuliah :</p>
+        <p>Nama Dosen :</p>
+        <p>Keterangan : Ada/tidak</p>
       </div>
     </div>
     <div class="w3-quarter w3-container">
       <div class="w3-container w3-white">
         <p><b>108</b></p>
-        <p>Tampilkan Info Jadwal Ruang 108 ambil dari database</p>
+        <p>Matakuliah :</p>
+        <p>Nama Dosen :</p>
+        <p>Keterangan : Ada/tidak</p>
       </div>
     </div>
   </div>
@@ -158,29 +190,35 @@ li a.login {
     <div class="w3-third w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <p><b>Aula</b></p>
-        <p> Tampilkan Info Jadwal Ruang Aula ambil dari database</p>
+        <p>Matakuliah :</p>
+        <p>Nama Dosen :</p>
+        <p>Keterangan : Ada/tidak</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
         <p><b>Lpsi 1</b></p>
-        <p>Tampilkan Info Jadwal Ruang LPSI 1 ambil dari database</p>
+        <p>Matakuliah :</p>
+        <p>Nama Dosen :</p>
+        <p>Keterangan : Ada/tidak</p>
       </div>
     </div>
     <div class="w3-third w3-container">
       <div class="w3-container w3-white">
         <p><b>LPSI 2</b></p>
-        <p>Tampilkan Info Jadwal Ruang LPSI 2 ambil dari database</p>
+        <p>Matakuliah :</p>
+        <p>Nama Dosen :</p>
+        <p>Keterangan : Ada/tidak</p>
       </div>
     </div>
 
   
 <!-- End page content -->
 </div>
+</body>
 
 <footer class="example1">
 <h3>Running text informasi penting </h3>
 </footer>
 
-</body>
 </html>
