@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>Sistem Informasi Jadwal Kelas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: white;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 7px 8px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+li a.login {
+    color: white;
+    background-color:rgb(50,100,255);
+}
+</style>
+<style style="text/css">
+.example1 {
+ height: 50px; 
+ overflow: hidden;
+}
+.example1 h3 {
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%); 
+ transform:translateX(100%);
+ /* Apply animation to this element */ 
+ -moz-animation: example1 15s linear infinite;
+ -webkit-animation: example1 15s linear infinite;
+ animation: example1 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%);   
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<header>
+   <h1><b><center>Sistem Informasi Jadwal Kelas</center></b></h1>
+</header>
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Preview')" >Preview</a>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Setting Jadwal')"id="defaultOpen">Setting Jadwal</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Running Text')">Running Text</a></li>
+</ul>
+
+<br>
+
+<div id="Preview" class="tabcontent">
+	<iframe src="halamanadminfixpreview.html" style="border:none;" 			height="3250" width="100%"></iframe>
+</div>
+
+<div id="Setting Jadwal" class="tabcontent">
+	<iframe src="admin.php" style="border:none;" 			height="3250" width="100%"></iframe>
+</div>
+
+<div id="Running Text" class="tabcontent">
+  <iframe src="Running.html" style="border:none;"
+  height="3250" width="100%"></iframe>
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+     
+</script>
+     
+</body>
+</html> 
